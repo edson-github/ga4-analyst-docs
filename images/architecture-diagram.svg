@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" style="font-family: sans-serif;">
+    <defs>
+        <linearGradient id="gradAnalytics" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#FBBC05;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#EA4335;stop-opacity:1" />
+        </linearGradient>
+        <linearGradient id="gradAutomation" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:#4285F4;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#34A853;stop-opacity:1" />
+        </linearGradient>
+        <linearGradient id="gradAI" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#9C27B0;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#673AB7;stop-opacity:1" />
+        </linearGradient>
+        <filter id="dropShadow" height="130%">
+            <feGaussianBlur in="SourceAlpha" stdDeviation="3" />
+            <feOffset dx="2" dy="2" result="offsetblur" />
+            <feComponentTransfer>
+                <feFuncA type="linear" slope="0.3" />
+            </feComponentTransfer>
+            <feMerge>
+                <feMergeNode />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+    <rect width="800" height="300" fill="transparent" />
+    <g transform="translate(50, 100)" filter="url(#dropShadow)">
+        <rect width="140" height="100" rx="10" ry="10" fill="url(#gradAnalytics)" />
+        <text x="70" y="40" fill="white" text-anchor="middle" font-weight="bold" font-size="14">FONTE DE DADOS</text>
+        <text x="70" y="65" fill="white" text-anchor="middle" font-size="16">Google</text>
+        <text x="70" y="85" fill="white" text-anchor="middle" font-size="16">Analytics 4 (API)</text>
+    </g>
+    <g transform="translate(190, 150)">
+        <path d="M 10 0 L 80 0" stroke="#555" stroke-width="3" marker-end="url(#arrowhead)" />
+        <text x="45" y="-10" fill="#777" text-anchor="middle" font-size="12">Dados Brutos</text>
+    </g>
+    <g transform="translate(280, 100)" filter="url(#dropShadow)">
+        <rect width="160" height="100" rx="10" ry="10" fill="url(#gradAutomation)" />
+        <text x="80" y="35" fill="white" text-anchor="middle" font-weight="bold" font-size="14">ORQUESTRAÇÃO</text>
+        <text x="80" y="60" fill="white" text-anchor="middle" font-size="15">Motor de Automação</text>
+        <text x="80" y="80" fill="white" text-anchor="middle" font-size="12">(Extração &amp; Preparação)</text>
+    </g>
+    <g transform="translate(440, 150)">
+        <path d="M 10 0 L 80 0" stroke="#555" stroke-width="3" marker-end="url(#arrowhead)" />
+        <text x="45" y="-10" fill="#777" text-anchor="middle" font-size="12">Dados Estruturados</text>
+    </g>
+    <g transform="translate(530, 100)" filter="url(#dropShadow)">
+        <rect width="140" height="100" rx="10" ry="10" fill="url(#gradAI)" />
+        <text x="70" y="35" fill="white" text-anchor="middle" font-weight="bold" font-size="14">INTELIGÊNCIA</text>
+        <text x="70" y="60" fill="white" text-anchor="middle" font-size="16">LLM (GPT-4)</text>
+        <text x="70" y="80" fill="white" text-anchor="middle" font-size="12">+ Prompt de Analista</text>
+    </g>
+    <g transform="translate(600, 200)">
+        <path d="M 0 10 L 0 40" stroke="#555" stroke-width="3" marker-end="url(#arrowhead)" />
+    </g>
+    <g transform="translate(530, 250)" filter="url(#dropShadow)">
+        <rect width="140" height="40" rx="20" ry="20" fill="#333" stroke="#FFD600" stroke-width="2" />
+        <text x="70" y="25" fill="#FFD600" text-anchor="middle" font-weight="bold" font-size="14">Insights no
+            Slack/App</text>
+    </g>
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#555" />
+        </marker>
+    </defs>
+</svg>

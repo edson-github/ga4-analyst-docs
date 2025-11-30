@@ -1,0 +1,37 @@
+:root {
+  --md-primary-fg-color:        #0F0A29;
+  --md-primary-fg-color--light: #1A1245;
+  --md-primary-fg-color--dark:  #080517;
+  --md-accent-fg-color:         #3BDD8C;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-default-bg-color:        #0F0A29;
+  --md-default-fg-color:        #E0E0E0;
+  --md-default-fg-color--light: #A0A0A0;
+  --md-default-fg-color--lighter:#606060;
+  
+  /* Header background */
+  --md-primary-fg-color:        #0F0A29;
+  
+  /* Accent color (Green) */
+  --md-accent-fg-color:         #3BDD8C;
+  
+  /* Links */
+  --md-typeset-a-color:         #3BDD8C;
+  
+  /* Code blocks */
+  --md-code-bg-color:           #151035;
+}
+
+/* Force header to be dark even in light mode if desired, but for now just slate */
+.md-header {
+  background-color: #0F0A29 !important;
+}
+
+/* Custom button style to match the green button */
+.md-button--primary {
+  background-color: #3BDD8C !important;
+  color: #0F0A29 !important;
+  font-weight: bold;
+}
