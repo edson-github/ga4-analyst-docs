@@ -1,0 +1,44 @@
+site_name: GA4 Analyst Docs
+site_description: Documentação técnica do agente autônomo de análise de dados para Google Analytics 4.
+site_author: Edson Andrade
+# LEMBRETE: Se o nome do seu repo público for diferente, ajuste aqui:
+repo_url: https://github.com/edson-github/ga4-analyst-docs
+
+theme:
+  name: material
+  favicon: assets/favicon_v3.svg
+  logo: assets/favicon_2.svg
+  palette: 
+    # Esquema escuro (estilo Nano) - Default
+    - scheme: slate 
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    - scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - content.code.copy
+    - toc.follow
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
+nav:
+  - Visão Geral: index.md
+  - Arquitetura Técnica: architecture.md
